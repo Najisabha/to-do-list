@@ -1,0 +1,14 @@
+---
+description: Core project rules (Vite + React + TypeScript)
+alwaysApply: false
+---
+# Core project rules
+
+- Keep changes minimal and consistent with the current small-app structure (single-page Vite app under `src/`).
+- Prefer **TypeScript-first** solutions and keep `strict` compiler settings happy (no unused locals/params).
+- Avoid adding new dependencies unless absolutely necessary; prefer plain React + DOM APIs.
+- Maintain accessibility basics: labels for inputs, sensible aria labels, keyboard support for interactive controls.
+- Don’t introduce persistent side effects during render; keep effects scoped and cleaned up.
+- When you change behavior, update UI copy (Arabic/English) consistently and keep strings user-friendly.
+- Use the existing scripts for validation: `npm run build` (TypeScript + Vite build) should stay clean.
+

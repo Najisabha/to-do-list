@@ -1,0 +1,16 @@
+---
+description: React + TypeScript conventions for src/
+globs: src/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# React + TypeScript conventions
+
+- Prefer small pure functions (`normalizeText`, `makeId`) over inline logic, but don’t over-abstract.
+- Prefer `useMemo` only when it improves clarity or avoids repeated work; don’t memoize everything.
+- Use stable ids/keys and avoid array index keys.
+- Keep state updates immutable; use functional `setState(prev => ...)` when derived from previous state.
+- Keep event handlers typed via inference; avoid `any`.
+- For form submit flows: prevent default, validate input, then update state; keep submit buttons disabled when invalid.
+- Favor readable JSX: avoid deeply nested ternaries; extract a small component if it gets hard to scan.
+

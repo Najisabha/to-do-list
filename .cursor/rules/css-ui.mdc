@@ -1,0 +1,14 @@
+---
+description: CSS/UI conventions (simple, modern, accessible)
+globs: src/**/*.css
+alwaysApply: false
+---
+
+# CSS/UI conventions
+
+- Keep styling in plain CSS (no new CSS frameworks).
+- Prefer CSS variables for theme tokens (colors, spacing, shadow) and reuse existing variables in `:root`.
+- Avoid hard-coding sizes when `max-width: 100%` / responsive layouts are needed.
+- Preserve focus styles and visible keyboard navigation; don’t remove outlines without a replacement.
+- Keep class names simple and consistent with current style (`.card`, `.header`, `.actionButton`, etc.).
+
